@@ -17,16 +17,19 @@ a {
 img {
     max-width: 100%;
 }
+h2 {
+    font-family: "Playfair", serif;
+    margin-bottom: 20px;
+    color: var(--cor2);
+}
 
 /* Variáveis de css */
 :root {
-    /* Fonte */
-    --titulo: font-family: "Playfair", serif;
-
     /* Cores */
     --cor1: #000;
     --cor2: #fff;
     --cor3: #1a1a1a;
+    --cor4: #ffffff;
 }
 
 /* html */
@@ -107,10 +110,29 @@ nav > ul > li a {
     background-color: var(--cor2);
     color: var(--cor1);
 }
+
 /* Abrir menu */
 .menu-mobile.open-mobile {
     transform: translateX(0);
     opacity: 1;
+}
+
+/* Seções */
+section {
+    height: 100vh;
+    padding: 20px 40px;
+}
+#sec1 {
+    background-image: url(../assets/img/banner.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#sec1 > p {
+    color: var(--cor4);
+    text-align: justify;
+    margin: 10px 0;
 }
 
 /* Responsividade */
