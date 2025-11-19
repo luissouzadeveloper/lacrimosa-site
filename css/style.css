@@ -22,6 +22,11 @@ h2 {
     margin-bottom: 20px;
     color: var(--cor2);
 }
+figcaption {
+    font-family: "Playfair", serif;
+    font-size: 1.4em;  
+    margin: 20px 0;
+}
 
 /* Variáveis de css */
 :root {
@@ -119,9 +124,10 @@ nav > ul > li a {
 
 /* Seções */
 section {
-    height: 100vh;
     padding: 20px 40px;
 }
+
+/* Seção 1 */
 #sec1 {
     background-image: url(../assets/img/banner.jpg);
     background-position: left center;
@@ -133,6 +139,29 @@ section {
     color: var(--cor4);
     text-align: justify;
     margin: 10px 0;
+}
+
+/* Seção 2 */
+#sec2 {
+    background-image: url(../assets/img/bg-albuns.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--cor3);
+}
+.container-albuns{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-album img {
+    border-radius: 7px;
+}
+.card-album > figure > figcaption {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: var(--cor2);
 }
 
 /* Responsividade */
