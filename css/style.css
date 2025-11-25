@@ -153,8 +153,9 @@ section {
 .container-albuns{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
-.card-album img {
+.card-album img, .item-grade img {
     border-radius: 7px;
 }
 .card-album > figure > figcaption {
@@ -162,6 +163,32 @@ section {
     margin: 10px 0;
     font-weight: bold;
     color: var(--cor2);
+}
+
+/* Seção 3 */
+#sec3 {
+    background-image: url(../assets/img/bg-photos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#sec3 > h2 {
+    color: var(--cor1);
+}
+.grade-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.item-grade {
+    width: calc(50% - 7px);
+    height: 200px;
+    overflow: hidden;
+}
+.item-grade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Responsividade */
