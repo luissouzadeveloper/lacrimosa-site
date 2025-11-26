@@ -191,6 +191,98 @@ section {
     object-fit: cover;
 }
 
+#sec4 {
+    background-image: url(../assets/img/bg-newsletter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+#sec4 > div {
+    padding: 15px 0;
+}
+.form {
+    background-color: #0000006c;
+    border-radius: 7px;
+    text-align: center;
+    width: 80%;
+    padding: 5px;
+}
+.form-group{
+    margin: 10px 0;
+}
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--cor2);
+}
+.form-group > input {
+    width: 70%;
+    padding: 7px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+    font-weight: 1.1em;
+    margin: 0 10px;
+    transition: border-color 0.3s;
+}
+form > button, .faq > button {
+    background-color: var(--cor3);
+    padding: 10px 6px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 7px;
+    border: 1px solid var(--cor2);
+    color: var(--cor2);
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+form > button:hover, .faq > button:hover {
+    background-color: #0000006c;
+}
+.faq {
+    text-align: center;
+}
+
+/* Rodapé */
+#rodape {
+    background-color: var(--cor1);
+}
+#rodape h2, p {
+    text-align: center;
+}
+#rodape p {
+    color: var(--cor2);
+    margin: 15px 0;
+    padding: 7px 0;
+    font-size: 1.1em;
+    font-weight: bolder;
+    background-color: var(--cor3);
+}
+.container-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container-media > div {
+    margin: 5px 12px;
+}
+.container-media > div i {
+    color: var(--cor2);
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 500ms ease-in-out;
+}
+.container-media > div i:hover {
+    color: var(--cor3);
+}
+
 /* Responsividade */
 /* Mobile */
 @media screen and (min-width: 768px) {
