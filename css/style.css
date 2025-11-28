@@ -306,7 +306,7 @@ form > button:hover, .faq > button:hover {
     }
 
     /* Seção 1 */
-    #sec1 > p {
+    #sec1 {
         padding: 0 30px;
         font-size: 1.2em;
     }
@@ -332,6 +332,12 @@ form > button:hover, .faq > button:hover {
 
 /* Desktops (maiores) */
 @media (min-width: 993px) and (max-width: 1024px) {
+    /* Seção 1 */
+    #sec1 {
+        padding: 0 30px;
+        font-size: 1.2em;
+    }
+
     /* Seção 2 */
     .container-albuns {
         gap: 10px;
@@ -362,6 +368,12 @@ form > button:hover, .faq > button:hover {
 
 /* Tvs */
 @media (min-width: 1025px) {
+    /* Seção 1 */
+    #sec1 {
+        padding: 70px;
+        font-size: 1.2em;
+    }
+
     /* Seção 2 */
     .container-albuns {
         gap: 15px;
