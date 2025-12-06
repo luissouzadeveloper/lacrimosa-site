@@ -257,10 +257,17 @@
 
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" id="">
+                    <input type="email" id="email" name="email">
                 </div>
 
-                <button type="submit" class="submit-btn">Cadastre-se</button>
+                <button type="submit" class="submit-btn" onclick="validarForm(event)">Cadastre-se</button>
+
+                <div class="error-form">
+                    <span>Erro, preencha os campos</span>
+                </div>
+                <div class="success-form">
+                    <span>Logado com sucesso!</span>
+                </div>
             </form>
         </div>
 

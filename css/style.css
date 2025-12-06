@@ -27,6 +27,9 @@ figcaption {
     font-size: 1.4em;  
     margin: 20px 0;
 }
+section > h2 {
+    text-align: center;
+}
 
 /* Variáveis de css */
 :root {
@@ -244,6 +247,36 @@ form > button, .faq > button {
 }
 form > button:hover, .faq > button:hover {
     background-color: #0000006c;
+}
+.error-form {
+    background-color: rgba(156, 19, 19, 0.842);
+    color: var(--cor2);
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+    padding: 10px 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 200px;
+    overflow: hidden;
+}
+.success-form {
+    background-color: rgba(11, 107, 11, 0.74);
+    color: var(--cor2);
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+    padding: 10px 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 200px;
+    overflow: hidden;
+}
+.show-error, .show-success {
+    opacity: 1;
+    visibility: visible;
 }
 .faq {
     text-align: center;
